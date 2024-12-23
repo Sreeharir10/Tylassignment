@@ -1,0 +1,70 @@
+body {
+    background-image: url('login_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed on scroll */
+    background-color: #3b2dff; /* Fallback color */
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Standard text color for contrast */
+}
+
+.container {
+    width: 300px; /* Fixed width for better layout control */
+    background-color: #ffffff; /* White background for the container */
+    margin: 10% auto; /* Center the container both vertically and horizontally */
+    padding: 30px 20px; /* Add padding for spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center; /* Center-align the text */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+h2 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #3b2dff; /* Match the primary color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    font-size: 16px; /* Standard font size for the paragraph */
+    margin: 20px 0; /* Space around the paragraph */
+    color: #555; /* Subtle color for better readability */
+}
+
+.button {
+    display: inline-block; /* Button-like appearance */
+    background-color: #3b2dff; /* Primary button color */
+    color: #ffffff; /* White text color */
+    padding: 12px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 16px; /* Slightly larger font size for better visibility */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.button:hover {
+    background-color: #000; /* Change to black on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.button:active {
+    background-color: #222; /* Darker black when clicked */
+    transform: scale(0.98); /* Button press effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

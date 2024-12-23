@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Subtle background */
+    color: #333; /* Standard text color */
+}
+
+.navbar {
+    background-color: #3a3f58; /* Darker navbar color */
+    display: flex;
+    justify-content: space-between; /* Spread items across the navbar */
+    padding: 15px 30px; /* Padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Add space between menu items */
+}
+
+.navbar li {
+    font-size: 16px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar a:hover {
+    background-color: #50597b; /* Slightly lighter on hover */
+    color: #f9f9f9; /* Slightly brighter text on hover */
+}
+
+.dashboard-bar {
+    background-color: #0056b3; /* Primary color for dashboard bar */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Better spacing */
+    font-size: 20px; /* Larger font for prominence */
+    font-weight: bold;
+    text-transform: uppercase; /* All caps for emphasis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.main-content {
+    padding: 40px;
+    background-color: white;
+    margin: 30px auto; /* Center align with auto margins */
+    max-width: 900px; /* Restrict content width */
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Deep shadow for a card-like appearance */
+    border: 1px solid #ddd; /* Subtle border */
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3; /* Accent color for heading */
+    font-size: 28px; /* Larger font size */
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Slight spacing for elegance */
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px; /* Bigger buttons for better visibility */
+    background-color: #007BFF;
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.button:active {
+    background-color: #003d80;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
+}

@@ -1,0 +1,82 @@
+body {
+    background-image: url('login_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Ensure background remains fixed on scroll */
+    background-color: #3b2dff; /* Fallback color */
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Standard text color for contrast */
+}
+
+.container {
+    width: 300px; /* Fixed width for better layout control */
+    background-color: #ffffff; /* White background for the form */
+    margin: 10% auto; /* Center the container vertically and horizontally */
+    padding: 30px 20px; /* Add padding for spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Subtle fade-in animation */
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 20px; /* Space between fields */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth interaction */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3b2dff;
+    box-shadow: 0 0 8px rgba(59, 45, 255, 0.5); /* Highlight on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="submit"] {
+    background-color: #3b2dff; /* Primary color */
+    color: #ffffff; /* White text */
+    padding: 12px 20px;
+    margin: 10px 0 0 0;
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for button */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input[type="submit"]:hover {
+    background-color: #000; /* Black on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+input[type="submit"]:active {
+    background-color: #222; /* Darker black when clicked */
+    transform: scale(0.98); /* Button press effect */
+}
+
+/* Add subtle fade-in animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

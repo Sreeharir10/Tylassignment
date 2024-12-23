@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light background */
+    color: #333; /* Text color */
+}
+
+.navbar {
+    background-color: #3a3f58; /* Dark navbar color */
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px; /* Add more padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    gap: 30px; /* Add space between menu items */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    font-size: 16px;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+    background-color: #4a5070; /* Darker background on hover */
+    color: #f9f9f9;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dashboard-bar {
+    background-color: #0056b3; /* Primary color */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Increase padding for better spacing */
+    font-size: 18px; /* Slightly larger font */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.create-employee {
+    padding: 30px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px; /* Center and limit width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    border: 1px solid #ddd; /* Border for contrast */
+}
+
+.create-employee h3 {
+    text-align: center;
+    color: #0056b3; /* Accent color */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.create-employee form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.create-employee label {
+    font-weight: 600; /* Bold and prominent */
+    color: #555; /* Subtle text color */
+}
+
+.create-employee input[type="text"],
+.create-employee input[type="email"],
+.create-employee input[type="file"],
+.create-employee select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.create-employee input[type="radio"],
+.create-employee input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.create-employee .button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase; /* All caps for emphasis */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-employee .button:hover {
+    background-color: #003d80; /* Darker blue on hover */
+}
+
+h1 {
+    color: #0056b3;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase; /* All caps for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+}
+
+.action-buttons .button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light and neutral background */
+    color: #333; /* Standard text color */
+}
+
+.navbar {
+    background-color: #3a3f58; /* Darker navbar color */
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    padding: 15px 30px; /* Padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+.navbar li {
+    font-size: 16px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar a:hover {
+    background-color: #50597b; /* Slightly lighter on hover */
+    color: #f9f9f9; /* Brighter text on hover */
+}
+
+.dashboard-bar {
+    background-color: #0056b3; /* Primary color for dashboard bar */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Better spacing */
+    font-size: 20px; /* Larger font for prominence */
+    font-weight: bold;
+    text-transform: uppercase; /* All caps for emphasis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.edit-employee {
+    padding: 40px;
+    background-color: white;
+    margin: 30px auto; /* Center align with auto margins */
+    max-width: 900px; /* Restrict content width */
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Card-like shadow */
+    border: 1px solid #ddd; /* Subtle border for structure */
+}
+
+.edit-employee h3 {
+    text-align: center;
+    color: #0056b3; /* Accent color for heading */
+    font-size: 24px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.edit-employee form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 20px; /* Space between form elements */
+}
+
+.edit-employee label {
+    font-weight: bold; /* Make labels bold */
+    color: #333; /* Consistent label color */
+}
+
+.edit-employee input[type="text"],
+.edit-employee input[type="email"],
+.edit-employee input[type="file"],
+.edit-employee select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.edit-employee input[type="text"]:focus,
+.edit-employee input[type="email"]:focus,
+.edit-employee input[type="file"]:focus,
+.edit-employee select:focus {
+    border-color: #0056b3; /* Highlight on focus */
+    outline: none;
+}
+
+.edit-employee input[type="radio"],
+.edit-employee input[type="checkbox"] {
+    margin-right: 10px; /* Space between input and label */
+}
+
+.edit-employee .button {
+    width: auto; /* Button width auto */
+    align-self: center; /* Center the button */
+    padding: 12px 20px; /* Add padding for visibility */
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.edit-employee .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.edit-employee .button:active {
+    background-color: #003d80;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase; /* Uppercase headings */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Subtle alternate row color */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
